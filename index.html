@@ -5,16 +5,17 @@
     <title>Title</title>
     <style>
         #container {
-            width: 800px;
+            width: 400px;
             height: 800px;
             border: 2px solid #000;
             display: flex;
             flex-direction: row;/*修改主轴方向*/
-            /*flex-wrap: wrap; !*当一行放不下，受否需要换行*!*/
+            flex-wrap: wrap; /*当一行放不下，受否需要换行*/
             /*交叉轴决定项目换行的方向*/
-            justify-content: space-between;
+            /*justify-content: space-between;*/
         /*    项目在主轴方向上的对齐方式*/
-            align-items: flex-end;
+            align-items: center;
+            /*align-content: flex-end;*/
         }
 
         .box {
@@ -22,6 +23,9 @@
             height: 100px;
             background-color: pink;
             margin: 5px;
+        }
+        .div3 {
+            align-self: flex-end;
         }
     </style>
 </head>
